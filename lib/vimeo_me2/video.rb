@@ -66,7 +66,7 @@ module VimeoMe2
     private
       def set_uri video_id
         @video_id = video_id
-        @base_uri = /videos?/.match(video_id.to_s) ? video_id : "/videos/#{video_id.to_s}"
+        @base_uri = /videos?/.match(video_id.to_s) ? video_id : "/video/#{video_id.to_s}"
       end
   end
 end
